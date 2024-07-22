@@ -6,6 +6,7 @@
 5) ncbi_datasets.sh - this needs to be automated
 6) database_download.sh
 7) BLAST
+8) statistical analysis (on r)
 
 #general set-up scripts
 
