@@ -34,7 +34,6 @@ with open(output_file, 'w', newline='') as csvfile:
 #Replace with the directory containing HTML files
   html_dir = 'Downloads/microbesonline/operons'
   html_files = [os.path.join(html_dir, f) for f in os.listdir(html_dir) if f.endswith('.html')]
-  output_file = 'all_tables.csv'
 
 #Convert to the output and print where the file has been saved
   extract_tables_to_csv(html_files, output_file)
