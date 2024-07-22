@@ -2,6 +2,7 @@ import pandas as pd
 import os
 
 #change directory to the location of the data
+cd path/to/data
 
 # Define your CSV file path and desired words
 csv_file = "extracted_data.csv"
