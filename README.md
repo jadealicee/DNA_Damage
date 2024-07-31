@@ -1,17 +1,14 @@
-#establish file order
-1) [microbesonline.sh](microbesonline.sh)
-2) extract.py
-3) filter_hr_archaea.py OR filter_hr_bacteria.py
-4) filenamegrep.sh - this needs to be automated
-5) ncbi_datasets.sh - this needs to be automated
-6) database_download.sh
-7) BLAST
-8) statistical analysis (on r)
-
-#general set-up scripts
+#file order
+1) [microbesonline.sh](microbesonline.sh) This script was used to 
+2) [extract.py](extract.py)
+3) [filter_hr_archaea.py](filter_hr_archaea.py) OR [filter_hr_bacteria.py](filter_hr_bacteria.py)
+4) [filenamegrep.sh](filenamegrep.sh)
+5) [ncbi_datasets.sh](ncbi_datasets.sh)
+6) [database_download.sh](database_download.sh)
+7) [BLAST](BLAST.py)
+8) [statistical analysis](fisher.r)
 
 
-
-#genomes of interest:
+Coding credits:
 
 
