@@ -38,4 +38,4 @@ with open(output_file, 'w', newline='') as csvfile:
 
 #Convert to the output and print where the file has been saved
   extract_tables_to_csv(html_files, output_file)
-  print(f'Tables extracted from {len(html_files)} files and saved to {output_file}')
+  print(f'Tables have all been extracted from the {len(html_files)} files and have been saved to {output_file}!')
