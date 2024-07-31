@@ -9,7 +9,7 @@ File order
 Separate attempts that were scrapped:
 1) [filter_mmr.py](filter_mmr.py) This was my attempt to look into another DNA repair pathway but the genes were not sufficiently annotated
 2) [database_download.sh](database_download.sh) Download the huge NR datbase from BLAST - despite this taking weeks I ended up using expasy instead
-3) [BLAST](BLAST.py) This code took a minimum of 5 days to run on the HMEMQ nodes. Kept timing out
+3) [BLAST](BLAST) This code took a minimum of 5 days to run on the HMEMQ nodes. Kept timing out
 
 
 
