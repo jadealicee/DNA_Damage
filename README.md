@@ -1,5 +1,5 @@
 #establish file order
-1) microbesonline.sh
+1) [microbesonline.sh](microbesonline.sh)
 2) extract.py
 3) filter_hr_archaea.py OR filter_hr_bacteria.py
 4) filenamegrep.sh - this needs to be automated
