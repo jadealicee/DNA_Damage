@@ -1,34 +1,34 @@
 from bs4 import BeautifulSoup
 import csv
 
-# Define output file
+#Pick name for output file
 output_file = "extracted_data.csv"
 
-# Open output file for writing
+#Open output file for writing
 with open(output_file, 'w', newline='') as csvfile:
   writer = csv.writer(csvfile)
 
-  # Loop through each HTML file
+  #Loop through each HTML file
   for file in html_files:
     # Read and parse HTML content
     with open(file, 'r') as f:
       soup = BeautifulSoup(f, 'html.parser')
 
-    # Find all tables
+    #Find all tables
     tables = soup.find_all('table')
 
-    # Loop through each table
+    #Loop through each table
     for table in tables:
-      # Extract rows
+      #Extract rows
       rows = table.find_all('tr')
 
-      # Loop through each row
+      #Loop through each row
       for row in rows:
-        # Check if row contains 'TRUE' (case-insensitive)
+        #Check if row contains 'TRUE'
         if 'TRUE'.lower() in row.text.lower():
-          # Extract cell data
+          #Extract cell data
           cells = [cell.text.strip() for cell in row.find_all(['td', 'th'])]
-          # Write data to CSV
+          #Write data to CSV
           writer.writerow(cells)
 
 #Replace with the directory containing HTML files
