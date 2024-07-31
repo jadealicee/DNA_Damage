@@ -1,0 +1,19 @@
+
+#!/bin/bash -i
+#SBATCH --job-name=M_Stadtmanae2
+#SBATCH --partition=hmemq
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=40
+#SBATCH --mem=800g
+#SBATCH --time=5-00:30:00
+#SBATCH --output=/gpfs01/home/mbxjg4/Jade/Output/%x.out
+#SBATCH --error=/gpfs01/home/mbxjg4/Jade/Error/%x.err
+#SBATCH --parsable
+
+conda init
+conda activate gorb
+export PATH=$HOME/miniconda3/ncbi-blast-2.15.0+/bin:$PATH
+echo RUNNING ON `hostname`
+cd /gpfs01/home/mbxjg4/Jade/Genomes/
+export DATABASE=nr
+blastp -db $DATABASE/nr -query M_Stadtmanae/GCF_000012545.1_ASM1254v1_protein.faa -out M_Stadtmanae.csv
